@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     IT's Tracking Code
  * Description:     Add a tracking code to header & footer section
- * Version:         1.0.2
+ * Version:         1.0.3
  * Author:          kprajapati22
  * Author URI:      https://profiles.wordpress.org/kprajapati22
  * Text Domain:     trackingcode
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 if ( ! defined( 'TRACKING_CODE_VERSION' ) ) {
-	define( 'TRACKING_CODE_VERSION', '1.0.1' ); // version of plugin.
+	define( 'TRACKING_CODE_VERSION', '1.0.3' ); // version of plugin.
 }
 if ( ! defined( 'TRACKING_CODE_DIR' ) ) {
 	define( 'TRACKING_CODE_DIR', dirname( __FILE__ ) ); // plugin dir.

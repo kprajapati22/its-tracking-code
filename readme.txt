@@ -2,8 +2,8 @@
 Contributors: kprajapati22
 Tags: tracking, code, admin, site, header, footer, google, yahoo, bing, piwik, google analytics
 Requires at least: 2.0.0
-Tested up to: 6.2.2
-Stable tag: 1.0.2
+Tested up to: 6.4.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,9 @@ None yet
 1. Add your tracking code here.
 
 == Changelog ==
+
+= 1.0.3 - 12/12/2023 =
+* Tested with WordPress 6.4.2
 
 = 1.0.2 - 22/06/2023 =
 * Tested with WordPress 6.2.2.
