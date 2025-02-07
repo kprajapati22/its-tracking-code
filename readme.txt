@@ -1,9 +1,8 @@
-=== IT's Tracking Code ===
+=== KP Tracking Code ===
 Contributors: kprajapati22
-Tags: tracking, code, admin, site, header, footer, google, yahoo, bing, piwik, google analytics
-Requires at least: 2.0.0
-Tested up to: 6.4.2
-Stable tag: 1.0.3
+Tags: tracking, code, analytics code, pixel code, header and footer
+Tested up to: 6.7
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +35,10 @@ None yet
 1. Add your tracking code here.
 
 == Changelog ==
+
+= 1.0.4 - 08/02/2025 =
+* Resolved warnings
+* Tested with WordPress 6.7.1
 
 = 1.0.3 - 12/12/2023 =
 * Tested with WordPress 6.4.2

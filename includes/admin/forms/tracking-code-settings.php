@@ -31,9 +31,9 @@ $tracking_code_options = stripslashes_deep( get_option( 'tracking_code_options' 
 
 		<p>
 			<h3><?php esc_html_e( 'Add Tracking Code to HTML head', 'trackingcode' ); ?></h3>
-			<textarea rows="15" style="width:90%" name="tracking_code_options[tracking_head][code]"><?php echo @$tracking_code_options['tracking_head']['code']; ?></textarea>
+			<textarea rows="15" style="width:90%" name="tracking_code_options[tracking_head][code]"><?php echo $tracking_code_options['tracking_head']['code'] ?? ''; ?></textarea>
 			<br />
-			<input type="checkbox" name="tracking_code_options[tracking_head][disable]" id="tracking_head_disable" <?php checked( @$tracking_code_options['tracking_head']['disable'], 'on' ); ?>  />
+			<input type="checkbox" name="tracking_code_options[tracking_head][disable]" id="tracking_head_disable" <?php checked( $tracking_code_options['tracking_head']['disable'] ?? '', 'on' ); ?>  />
 			<label for="tracking_head_disable"><?php esc_html_e( 'Disable this head tracking code', 'trackingcode' ); ?></label>
 		</p>
 
@@ -41,9 +41,9 @@ $tracking_code_options = stripslashes_deep( get_option( 'tracking_code_options' 
 
 		<p>
 			<h3><?php esc_html_e( 'Add Tracking Code to Footer', 'trackingcode' ); ?></h3>
-			<textarea rows="15" style="width:90%" name="tracking_code_options[tracking_footer][code]"><?php echo @$tracking_code_options['tracking_footer']['code']; ?></textarea>
+			<textarea rows="15" style="width:90%" name="tracking_code_options[tracking_footer][code]"><?php echo $tracking_code_options['tracking_footer']['code'] ?? ''; ?></textarea>
 			<br />
-			<input type="checkbox" name="tracking_code_options[tracking_footer][disable]" id="tracking_footer_disable"  <?php checked( @$tracking_code_options['tracking_footer']['disable'], 'on' ); ?> />
+			<input type="checkbox" name="tracking_code_options[tracking_footer][disable]" id="tracking_footer_disable" <?php checked( $tracking_code_options['tracking_footer']['disable'] ?? '', 'on' ); ?> />
 			<label for="tracking_footer_disable"><?php esc_html_e( 'Disable this footer tracking code', 'trackingcode' ); ?></label>
 		</p>
 

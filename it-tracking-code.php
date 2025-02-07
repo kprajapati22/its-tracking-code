@@ -1,14 +1,18 @@
 <?php
 /**
- * Plugin Name:     IT's Tracking Code
- * Description:     Add a tracking code to header & footer section
- * Version:         1.0.3
- * Author:          kprajapati22
- * Author URI:      https://profiles.wordpress.org/kprajapati22
- * Text Domain:     trackingcode
- * License: GPLv2
+ * Plugin Name: KP Tracking Code
+ * Description: Add a tracking code to header & footer section
+ * Version: 1.0.4
+ * Author: Kalpesh Prajapati
+ * Author URI: https://profiles.wordpress.org/kprajapati22
+ * Plugin URI: https://wordpress.org/plugins/kp-disable-admin-bar-based-on-user-roles
+ * License: GPL2
+ * Text Domain: trackingcode
+ * Domain Path: /languages
+ * Requires at least:  5.0
+ * Requires PHP: 7.4
  *
- * @package IT's Tracking Code
+ * @package KP Tracking Code
  */
 
 // Exit if accessed directly.
@@ -19,12 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Basic plugin definitions
  *
- * @package IT's Tracking Code
+ * @package KP Tracking Code
  * @since 1.0.0
  */
 
 if ( ! defined( 'TRACKING_CODE_VERSION' ) ) {
-	define( 'TRACKING_CODE_VERSION', '1.0.3' ); // version of plugin.
+	define( 'TRACKING_CODE_VERSION', '1.0.4' ); // version of plugin.
 }
 if ( ! defined( 'TRACKING_CODE_DIR' ) ) {
 	define( 'TRACKING_CODE_DIR', dirname( __FILE__ ) ); // plugin dir.
@@ -35,16 +39,6 @@ if ( ! defined( 'TRACKING_CODE_URL' ) ) {
 if ( ! defined( 'TRACKING_CODE_ADMIN' ) ) {
 	define( 'TRACKING_CODE_ADMIN', TRACKING_CODE_DIR . '/includes/admin' ); // plugin admin dir.
 }
-
-/**
- * Load Text Domain
- *
- * This gets the plugin ready for translation.
- *
- * @package IT's Tracking Code
- * @since 1.0.0
- */
-load_plugin_textdomain( 'trackingcode', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 /**
  * Settings Link
@@ -79,7 +73,7 @@ global $tracking_code_public, $tracking_code_admin;
  *
  * Includes some required files for plugin
  *
- * @package IT's Tracking Code
+ * @package KP Tracking Code
  * @since 1.0.0
  */
 

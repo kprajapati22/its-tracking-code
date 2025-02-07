@@ -52,4 +52,3 @@ class Tracking_Code_Admin {
 		add_action( 'admin_menu', array( $this, 'tracking_code_admin_menu_pages' ) );
 	}
 }
-
